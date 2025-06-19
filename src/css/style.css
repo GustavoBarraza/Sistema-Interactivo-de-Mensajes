@@ -102,6 +102,7 @@ button:hover {
     height: 100px;
 }
 .image-section img {
+    align-items: center;
     max-width: 100%;
     max-height: 100%;
 }
