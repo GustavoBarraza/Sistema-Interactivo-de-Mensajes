@@ -36,54 +36,6 @@
             <div class="result" id="result"></div>
         </article>
     </main>
-     <script>
-    const shapes = [];
-    const shapeTypes = ['circle', 'square', 'triangle'];
-    const totalShapes = 30;
-
-    for (let i = 0; i < totalShapes; i++) {
-      const shapeType = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
-      const shape = document.createElement('div');
-      shape.classList.add('shape', shapeType);
-
-      shape.style.left = Math.random() * window.innerWidth + 'px';
-      shape.style.top = Math.random() * window.innerHeight + 'px';
-
-      document.body.appendChild(shape);
-      shapes.push(shape);
-    }
-
-    document.addEventListener('mousemove', (e) => {
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
-
-      shapes.forEach(shape => {
-        const rect = shape.getBoundingClientRect();
-        const shapeX = rect.left + rect.width / 2;
-        const shapeY = rect.top + rect.height / 2;
-
-        const dx = shapeX - mouseX;
-        const dy = shapeY - mouseY;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-
-        if (distance < 150) {
-          const moveX = dx / distance * 50;
-          const moveY = dy / distance * 50;
-          shape.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.5)`;
-        } else {
-          shape.style.transform = `translate(0, 0) scale(1)`;
-        }
-      });
-    });
-
-    window.addEventListener('resize', () => {
-      shapes.forEach(shape => {
-        shape.style.left = Math.random() * window.innerWidth + 'px';
-        shape.style.top = Math.random() * window.innerHeight + 'px';
-      });
-    });
-  </script>
-
     <footer></footer>
 
     <script src="src/js/main.js"></script>

@@ -1,11 +1,18 @@
 body {
-    background: linear-gradient(rgb(0, 204, 255), rgb(1, 185, 231), rgb(253, 253, 253));
+    background-image: url();
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;  
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 320px;
+    margin: auto;
 }
 
 main {
@@ -38,31 +45,24 @@ main {
 
 .input {
     display: flex;
-    width: 250px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .input input {
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid #333; 
-    border: none;
-    outline: 0;
-    font: bold 1.2rem Arial, sans-serif;
-    text-align: center;
-}
-
-.input label {
-    font: bold 1.2rem Arial, sans-serif;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
 
 .input input:focus {
-    border-color: rgb(0, 204, 255);
-    box-shadow: 0 0 5px rgba(0, 204, 255, 0.5);
-    transition: 0.3s;
+    border-color: #00c6ff;
+    outline: none;
 }
 
 button {

@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
             result.textContent = "La edad debe ser un número válido.";
             result.style.color = "red";
         } else if (age < 18) {
-            result.textContent = `Hola ${name}, eres menor de edad. ¡Sigue aprendiendo!`;
-            result.style.color = "green";
+            result.textContent = `Hola ${name}, eres menor de edad.¡Sigue aprendiendo y disfrutando del código!`;
+            result.style.color = "orange";
         } else {
-            result.textContent = `Hola ${name}, ¡explora nuevas oportunidades!`;
+            result.textContent = `Hola ${name}, ¡Prepárate para grandes oportunidades en el mundo de la programación!`;
             result.style.color = "green";
         }
     });
