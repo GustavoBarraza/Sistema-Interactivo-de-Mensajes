@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formas Interactivas</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #111;
+    }
+
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      transition: transform 0.2s ease, background-color 0.3s;
+    }
+
+    .circle {
+      width: 40px;
+      height: 40px;
+      background: #00f2ff;
+    }
+
+    .square {
+      width: 30px;
+      height: 30px;
+      background: #ff3c00;
+      border-radius: 10%;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 35px solid #00ff88;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    const shapes = [];
+    const shapeTypes = ['circle', 'square', 'triangle'];
+    const totalShapes = 30;
+
+    for (let i = 0; i < totalShapes; i++) {
+      const shapeType = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
+      const shape = document.createElement('div');
+      shape.classList.add('shape', shapeType);
+
+      shape.style.left = Math.random() * window.innerWidth + 'px';
+      shape.style.top = Math.random() * window.innerHeight + 'px';
+
+      document.body.appendChild(shape);
+      shapes.push(shape);
+    }
+
+    document.addEventListener('mousemove', (e) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+
+      shapes.forEach(shape => {
+        const rect = shape.getBoundingClientRect();
+        const shapeX = rect.left + rect.width / 2;
+        const shapeY = rect.top + rect.height / 2;
+
+        const dx = shapeX - mouseX;
+        const dy = shapeY - mouseY;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < 150) {
+          const moveX = dx / distance * 50;
+          const moveY = dy / distance * 50;
+          shape.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.5)`;
+        } else {
+          shape.style.transform = `translate(0, 0) scale(1)`;
+        }
+      });
+    });
+
+    window.addEventListener('resize', () => {
+      shapes.forEach(shape => {
+        shape.style.left = Math.random() * window.innerWidth + 'px';
+        shape.style.top = Math.random() * window.innerHeight + 'px';
+      });
+    });
+  </script>
+
+</body>
+</html>
