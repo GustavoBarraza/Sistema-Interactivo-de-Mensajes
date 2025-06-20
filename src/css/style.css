@@ -94,3 +94,22 @@ button:hover {
     border-radius: 5px;
 }
 
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .input input {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
