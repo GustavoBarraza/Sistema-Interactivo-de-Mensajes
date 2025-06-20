@@ -1,8 +1,8 @@
 # Sistema-Interactivo-de-Mensajes
-¡Hola! 👋
+
 Este es un proyecto muy sencillo hecho para practicar cómo pedirle datos a una persona (como su nombre y su edad), revisarlos, y luego mostrarle un mensaje personalizado en la pantalla.
 
-🧠 ¿Qué hace este programa?
+¿Qué hace este programa?
 Este sistema interactivo:
 
 Te pide tu nombre y tu edad.
@@ -17,26 +17,31 @@ Si tienes 18 o más, te motiva a buscar nuevas oportunidades.
 
 Si escribes mal la edad (por ejemplo, letras en lugar de números), te avisa que hay un error.
 
-🛠️ ¿Qué usé para hacerlo?
-HTML 🧱 – para la estructura de la página
+¿Qué usé para hacerlo?
+HTML – para la estructura de la página
 
-CSS 🎨 – para que se vea bonito
+CSS – para que se vea bonito
 
-JavaScript 🧠 – para que funcione y responda cuando llenas el formulario
+JavaScript – para que funcione y responda cuando llenas el formulario
 
-🚀 ¿Cómo usarlo?
+¿Cómo usarlo?
+
 Abre el archivo index.html con doble clic.
 
 Escribe tu nombre y tu edad.
 
 Haz clic en el botón Enviar.
 
-Mira el mensaje que aparece 😊
+Mira el mensaje que aparece 
 
-📌 ¿Por qué hice esto?
-Este proyecto es parte de mi proceso de aprendizaje. Estoy practicando cómo hacer páginas que interactúan con las personas, y me ayuda a entender cómo funcionan las condiciones (if), la validación de datos y la forma de mostrar mensajes en una página web.
+¿Por qué hice esto?
 
-✅ ¿Qué puedo mejorar más adelante?
+Este proyecto es parte de mi proceso de aprendizaje. Estoy practicando cómo hacer páginas que interactúan con las personas, 
+y me ayuda a entender cómo funcionan las condiciones (if),
+la validación de datos y la forma de mostrar mensajes en una página web.
+
+¿Qué puedo mejorar más adelante?
+
 Que el formulario guarde los datos.
 
 Que aparezcan emojis o imágenes según la edad.
