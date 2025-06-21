@@ -1,44 +1,50 @@
-# Sistema-Interactivo-de-Mensajes
-Este es un proyecto muy sencillo hecho para practicar cómo pedirle datos a una persona (como su nombre y su edad), revisarlos, y luego mostrarle un mensaje personalizado en la pantalla.
+# Sistema Interactivo de Mensajes
 
-¿Qué hace este programa? Este sistema interactivo:
+Este es un proyecto sencillo hecho para practicar cómo pedir datos a una persona (como su nombre y su edad), validarlos y luego mostrar un mensaje personalizado en la pantalla.
 
-Te pide tu nombre y tu edad.
+---
 
-Verifica que la edad sea un número correcto.
+## ¿Qué hace este programa?
 
-Te muestra un mensaje dependiendo de tu edad:
+Este sistema interactivo:
+- Pide tu nombre y tu edad.
+- Verifica que la edad sea un número correcto.
+- Muestra un mensaje dependiendo de la edad:
+  - Si tienes menos de 18 años, te anima a seguir aprendiendo.
+  - Si tienes 18 o más, te motiva a buscar nuevas oportunidades.
+- Si escribes mal la edad (por ejemplo, letras en lugar de números), muestra un mensaje de error.
 
-Si tienes menos de 18 años, te anima a seguir aprendiendo.
+---
 
-Si tienes 18 o más, te motiva a buscar nuevas oportunidades.
+## Tecnologías utilizadas
 
-Si escribes mal la edad (por ejemplo, letras en lugar de números), te avisa que hay un error.
+- **HTML**: para la estructura de la página.
+- **CSS**: para el diseño visual.
+- **JavaScript**: para la lógica interactiva del formulario.
 
-¿Qué uso para hacerlo? HTML – para la estructura de la página
+---
 
-CSS – para que se vea bonito
+## Instrucciones de uso
 
-JavaScript – para que funcione y responda cuando llenas el formulario
+1. Abre el archivo `index.html` con doble clic.
+2. Escribe tu nombre y tu edad.
+3. Haz clic en el botón "Enviar".
+4. Observa el mensaje que aparece en pantalla.
 
-¿Cómo lo uso?
+---
 
-Abra el archivo index.html con doble clic.
+## Objetivo del proyecto
 
-Escribe tu nombre y tu edad.
+Este proyecto forma parte de mi proceso de aprendizaje. Me ayuda a practicar cómo crear páginas interactivas, aplicar condiciones (`if`), validar datos y mostrar respuestas personalizadas.
 
-Haga clic en el botón Enviar.
+---
 
-Mira el mensaje que aparece
+## Posibles mejoras futuras
 
-¿Por qué hice esto?
+- Guardar los datos ingresados en el navegador.
+- Mostrar imágenes o mensajes personalizados según la edad.
+- Mejorar la compatibilidad en dispositivos móviles.
 
-Este proyecto es parte de mi proceso de aprendizaje. Estoy practicando cómo hacer páginas que interactúan con las personas, y me ayuda a entender cómo funcionan las condiciones (if), la validación de datos y la forma de mostrar mensajes en una página web.
+---
 
-¿Qué puedo mejorar más adelante?
-
-Que el formulario guarda los datos.
-
-Quen aparecen emojis o imágenes según la edad.
-
-Que funciona en dispositivos móviles aún mejor.
+**Estado del proyecto:** En desarrollo
